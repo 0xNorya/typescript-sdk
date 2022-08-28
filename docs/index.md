@@ -8,5 +8,5 @@
 
 |  Package | Description |
 |  --- | --- |
-|  [@thirdweb-dev/sdk](./sdk.md) |  |
+|  [@daply/sdk](./sdk.md) |  |
 

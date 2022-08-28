@@ -113,7 +113,9 @@ export function extractConstructorParamsFromAbi(
   for (const input of abi) {
     if (input.type === "constructor") {
       let _input$inputs;
-      return (_input$inputs = input.inputs) !== null && _input$inputs !== void 0 ? _input$inputs : [];
+      return (_input$inputs = input.inputs) !== null && _input$inputs !== void 0
+        ? _input$inputs
+        : [];
     }
   }
   return [];
@@ -133,7 +135,9 @@ export function extractFunctionParamsFromAbi(
   for (const input of abi) {
     if (input.type === "function" && input.name === functionName) {
       let _input$inputs;
-      return (_input$inputs = input.inputs) !== null && _input$inputs !== void 0 ? _input$inputs : [];
+      return (_input$inputs = input.inputs) !== null && _input$inputs !== void 0
+        ? _input$inputs
+        : [];
     }
   }
   return [];
