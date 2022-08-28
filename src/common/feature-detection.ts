@@ -164,13 +164,16 @@ export function extractFunctionsFromAbi(
     const out = f.outputs?.map((o) => toJSType(o, true))?.join(", ");
     const promise = out ? `: Promise<${out}>` : `: Promise<TransactionResult>`;
     const signature = `contract.call("${f.name}"${fargs})${promise}`;
+    
+    let _f$inputs, _f$outputs, _f$name, _f$stateMutability;
+
     parsed.push({
-      inputs: f.inputs ?? [],
-      outputs: f.outputs ?? [],
-      name: f.name ?? "unknown",
+      inputs: (_f$inputs = f.inputs) !== null && _f$inputs !== void 0 ? _f$inputs : [],
+      outputs: (_f$outputs = f.outputs) !== null && _f$outputs !== void 0 ? _f$outputs : [],
+      name: (_f$name = f.name) !== null && _f$name !== void 0 ? _f$name : "unknown",
       signature,
-      stateMutability: f.stateMutability ?? "",
-      comment: doc,
+      stateMutability: (_f$stateMutability = f.stateMutability) !== null && _f$stateMutability !== void 0 ? _f$stateMutability : "",
+      comment: doc
     });
   }
   return parsed;
@@ -189,11 +192,13 @@ export function extractEventsFromAbi(
   const parsed: AbiEvent[] = [];
   for (const e of events) {
     const doc = extractCommentFromMetadata(e.name, metadata, "events");
+    let _e$inputs, _e$outputs, _e$name;
+
     parsed.push({
-      inputs: e.inputs ?? [],
-      outputs: e.outputs ?? [],
-      name: e.name ?? "unknown",
-      comment: doc,
+      inputs: (_e$inputs = e.inputs) !== null && _e$inputs !== void 0 ? _e$inputs : [],
+      outputs: (_e$outputs = e.outputs) !== null && _e$outputs !== void 0 ? _e$outputs : [],
+      name: (_e$name = e.name) !== null && _e$name !== void 0 ? _e$name : "unknown",
+      comment: doc
     });
   }
   return parsed;
