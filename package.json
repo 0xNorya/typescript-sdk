@@ -1,7 +1,7 @@
 {
-  "name": "@thirdweb-dev/sdk",
-  "version": "2.3.42",
-  "description": "The main thirdweb SDK.",
+  "name": "Daply@thirdweb-dev/sdk",
+  "version": "1.0.0",
+  "description": "Daply thirdweb SDK fork.",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/thirdweb-dev/typescript-sdk.git"
