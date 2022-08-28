@@ -1,5 +1,5 @@
 {
-  "name": "@daplythirdweb-dev/sdk",
+  "name": "@daply/sdk",
   "version": "1.0.0",
   "description": "Daply thirdweb SDK fork.",
   "repository": {
