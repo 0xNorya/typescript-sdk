@@ -4,7 +4,7 @@
   "description": "Daply thirdweb SDK fork.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/thirdweb-dev/typescript-sdk.git"
+    "url": "git+https://github.com/0xNorya/typescript-sdk.git"
   },
   "license": "Apache-2.0",
   "types": "dist/src/index.d.ts",
